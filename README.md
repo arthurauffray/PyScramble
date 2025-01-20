@@ -111,8 +111,8 @@ curl -X POST -H "Content-Type: application/json" \
 **Description**: Accepts a query parameter containing scrambled letters. Returns a list of possible words ordered by their rank.
 
 **Request URL**:
-```json
-"http://127.0.0.1:8080/unscramble?letters=hist
+```
+http://127.0.0.1:8080/unscramble?letters=hist
 ```
 
 **Example**:
