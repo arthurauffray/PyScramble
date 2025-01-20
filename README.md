@@ -1,7 +1,7 @@
-# PyScrambleAPI
+# PyScramble API + Module
 
 PyScrambleAPI is a Flask API that unscrambles sets of characters into actual words.
-It leverages its own PyScramble module, which ranks potential matches based on their likelihood of being correct.
+It leverages its very own PyScramble module, which ranks potential matches based on their likelihood of being correct.
 
 ---
 
