@@ -165,4 +165,14 @@ curl -G \
 **Response**:
 ```json
 {
-   "statu
+   "status": "ok"
+}
+```
+
+## License
+
+This project is available under the MIT License. Feel free to fork, extend, and submit pull requests.
+
+---
+
+If you have any questions or run into issues, please open an issue in this repository.
