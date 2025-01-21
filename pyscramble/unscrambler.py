@@ -17,7 +17,7 @@ class PyScramble:
     using a preloaded dictionary from words.json.
     """
 
-    def __init__(self, words_file_path) -> None:
+    def __init__(self, words_file_path = words_path) -> None:
         """
         Initialize PyScramble by loading words from a JSON file and building an index for unscrambling.
 
