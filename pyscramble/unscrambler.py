@@ -7,9 +7,13 @@ from typing import List, Dict
 
 dotenv.load_dotenv()
 
-words_path = os.getenv("WORDLIST_FILE_PATH", None)
-if words_path is None:
-    raise ValueError("WORDLIST_FILE_PATH is not set in .env!")
+# words_path = os.getenv("WORDLIST_FILE_PATH", None)
+# if words_path is None:
+#     raise ValueError("WORDLIST_FILE_PATH is not set in .env!")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Create the full path to words.json
+words_path = os.path.join(BASE_DIR, "words.json")
 
 class PyScramble:
     """

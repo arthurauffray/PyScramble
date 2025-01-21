@@ -1,3 +1,4 @@
 planning/
 pyscramble/data/logs/app.log
 pyscramble/data/logs/pyscramble.log
+.DS_Store
