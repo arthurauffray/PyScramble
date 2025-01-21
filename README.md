@@ -47,10 +47,12 @@ Make sure you have the following installed:
    ```
 3. **Install the dependencies**:
    ```bash
-   pip install logging flask
+   pip install -r requirements.txt
    ```
    *If desired, create and activate a virtual environment first.*
-
+4. **Set the worldist file path**:
+   Open the .env file in your editor of choice and set the path of the words.json file
+   (sample provided in /pyscramble/data/)
 ---
 
 ## Usage
