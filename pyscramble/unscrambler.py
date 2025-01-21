@@ -13,7 +13,7 @@ dotenv.load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Create the full path to words.json
-words_path = os.path.join(BASE_DIR, "words.json")
+words_path = os.path.join(BASE_DIR, "data", "words.json")
 
 class PyScramble:
     """
