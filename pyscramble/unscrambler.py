@@ -17,15 +17,13 @@ class PyScramble:
     using a preloaded dictionary from words.json.
     """
 
-    def __init__(self, data_dir: str = "data", words_filename: str = words_path) -> None:
+    def __init__(self, words_file_path) -> None:
         """
         Initialize PyScramble by loading words from a JSON file and building an index for unscrambling.
 
-        :param data_dir: Directory containing words.json
-        :param words_filename: JSON filename containing a "word_list" array
+        :param words_file_path: path to the JSON file containing the list of words.
         """
-        self.data_dir = data_dir
-        self.words_filename = words_filename
+        self.words_file_path = words_file_path
         self._words_index: Dict[str, List[str]] = {}
 
         # Load and index words
@@ -36,7 +34,7 @@ class PyScramble:
         Private method to load words from the JSON file and build an in-memory index
         mapping sorted letters -> list of matching words.
         """
-        file_path = os.path.join(self.data_dir, self.words_filename)
+        file_path = self.words_file_path
 
         if not os.path.isfile(file_path):
             raise FileNotFoundError(f"Words JSON file not found at: {file_path}")
