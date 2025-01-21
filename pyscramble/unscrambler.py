@@ -2,9 +2,14 @@
 
 import json
 import os
+import dotenv
 from typing import List, Dict
 
-words_path = "pyscramble/data/words.json"
+dotenv.load_dotenv()
+
+words_path = os.getenv("WORDLIST_FILE_PATH", None)
+if words_path is None:
+    raise ValueError("WORDLIST_FILE_PATH is not set in .env!")
 
 class PyScramble:
     """
@@ -81,8 +86,6 @@ class PyScramble:
         key = self._sort_string(scrambled_string)
         # Return the pre-computed anagrams or an empty list
         return self._words_index.get(key, [])
-
-
 
 if __name__ == "__main__":
     unscrambler = PyScramble()
