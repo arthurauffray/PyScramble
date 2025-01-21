@@ -30,7 +30,11 @@ Make sure you have the following installed:
 - **Python 3.9.6+**
 - **pip** (or another Python package manager)
 - **Flask**
-- **logging** 
+- **Flask-Limiter**
+- **python-dotenv** 
+- **gunicorn** (for prod)
+
+
 - (Optional) A virtual environment tool (e.g. venv)
 
 ---
